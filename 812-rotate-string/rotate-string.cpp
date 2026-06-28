@@ -7,12 +7,10 @@ public:
             return false;
 
         }
-        for(int count=0;count<=m;count++){
-            rotate(begin(s),begin(s)+1,end(s));
-            if(s == goal){
-                return true;
-            }
-            
-        }return false;
+        if((s+s).find(goal)!=string::npos){
+            return true;
+        }
+        return false;
     }
+
 };
